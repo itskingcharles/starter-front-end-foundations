@@ -13,6 +13,37 @@
   </head>
 
   <body>
-    <main></main>
+    <main>
+      <form action="proecess-form.js" method="post">
+        <!-- Add the HTML input elements here -->
+        <label for="name">First Name:</label>
+        <input id="name" type="text" name="name" />
+
+        <label for="location">Zipcode:</label>
+        <input
+            id="location"
+            type="text"
+            name="Zipcode"
+            autofocus="on"
+            maxlength="5"
+            required
+            />
+
+        <label for="form-message">Your Message:</label>
+        <textarea id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+            ></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+
+      <form action="baseball-stats.js" method="get">
+        <!-- Add the HTML input elements here -->
+      </form>
+    </main>
   </body>
 </html>
